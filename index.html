@@ -2,30 +2,33 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Learning Ember</title>
-  <link rel="stylesheet" href="css/style.css">
+<title>Circle Game</title>
+  <link rel="stylesheet" href="css/game.css">
+  <script src="js/game.js"></script>
 </head>
-<body>
+<body onload="updateTimer();">
 
-  <script type="text/x-handlebars">
 
-    {{! to be replaced with linkTo later}}
-    <a href="#">Play Game</a> | <a href="#">Scoreboard</a> <br>
-
-    {{outlet}}
-
-  </script>
 
   <!-- Game template -->
-  <script type="text/x-handlebars" data-template-name="index"></script>
+    <div class="HUD">
+      <div id="score">0</div><div id="timer">30 <small>sec(s)</small></div>
+      <div id="playbox" onclick="playCircleGame(); this.style.display = 'none';document.getElementById('content-box').style.display = 'none';"><a href="#" class="play">Play!</a></div>
+    </div>
 
+    <div id="content-box">
+      <h1>How to play</h1>
+      This is a game about <strong>CIRCLES</strong>. <br><br><span style="color:#00f;"><strong>BLUE</strong></span> circles give you <strong>POINTS</strong>. <br><br><span style="color: #000"><strong>BLACK</strong></span> circles give you <strong>TIME BONUSES</strong>.
+      <br><br>The <small>smaller</small> the circle, the <big>bigger</big> the points/time bonuses. <br><br> Try to get the high score
+       by pressing <span style="color:#00cc00;text-shadow: -1px -1px #000;"><strong>PLAY</strong></span> above!     
+    </div>
   <!-- Scoreboard template -->
   <script type="text/x-handlebars" data-template-name="scoreboard"></script>
-
+<!--
   <script src="js/libs/jquery-1.9.1.js"></script>
   <script src="js/libs/handlebars-1.0.0-rc.4.js"></script>
   <script src="js/libs/ember-1.0.0-rc.6.1.js"></script>
   <script src="js/app.js"></script>
-
+-->
 </body>
 </html>
