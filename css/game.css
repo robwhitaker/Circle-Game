@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+	font-family: arial, verdana, sans-serif;
+}
+
+div {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	outline: 0;
+}
+
+.circle {
+	margin: 0;
+	color: #fff;
+	font-family: arial;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow: 1px 1px #000;
+	line-height: 10em;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-border-radius: 5em;
+	-moz-border-radius: 5em;
+	border: 1px solid #000;
+	width: 160px;
+	height: 160px;
+	background-color: #000;
+}
+
+.play {
+	font-family: arial;
+	font-size: 40px;
+	font-weight: bold;
+	color: #00cc00;
+	text-shadow: -1px -1px #000;
+	text-decoration: none;
+}
+
+a.play:hover {
+	text-decoration: underline;
+}
+
+.HUD {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#timer {
+	width: 250px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #00f;
+	border-left: 1px solid #00f;
+	border-right: 1px solid #00f;
+
+	background-color: #ccc;
+	font-size: 2em;
+}
+
+#score {
+	width: 500px;
+	margin: 0 auto;
+	border: 1px solid #0000ff;
+	background-color: #ccc;
+	font-size: 3em;
+}
+
+#content-box {
+	margin: 0 auto;
+	width:500px;
+}
