@@ -23,8 +23,6 @@ function playCircleGame() {
 			clearInterval(loop);
 			document.getElementById('playbox').innerHTML = "<a href=\"#\" class=\"play\">Play Again?</a>";
 			document.getElementById('playbox').style.display = "block";
-			document.getElementById('content-box').innerHTML = "<h1>Submit your score!</h1> Name <input type='text'><input type='submit'>";
-			document.getElementById('content-box').style.display = "block";
 		}
 	}, 1000);
 }

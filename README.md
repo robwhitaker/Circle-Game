@@ -1,6 +1,6 @@
-Learning-Ember.js
+Circle Game
 =================
 
-Just some Ember.js practice. Building a small game and scoreboard.
+A small JavaScript game where you have to click on circles... quickly.
 
-Dependencies cloned from https://github.com/emberjs/starter-kit
+Originally meant to be used to learn Ember.js, but has since been adapted to be a refresher in JavaScript.
